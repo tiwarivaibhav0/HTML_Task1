@@ -1,0 +1,154 @@
+body {
+    font-family: 'Playfair Display';
+    color: #2563EB;
+    width: 80%;
+    margin: auto;
+    background-color: #EFF6FF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin: 0 8px;
+
+}
+
+#icon {
+    font-size: 60%;
+    border: 1px dashed #2563EB;
+    /* padding: 0.1%; */
+
+}
+
+.navSection {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headings {
+    display: flex;
+    justify-content: space-around;
+}
+
+.headings>* {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.search {
+    background-color: #DBEAFE;
+    padding: 1%;
+    height: max-content;
+    border-radius: 2px;
+}
+
+input {
+    border: none;
+    background-color: #DBEAFE;
+    color: #2563EB;
+
+
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #2563EB;
+}
+
+.mainSection {
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.sidebar>* {
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #DBEAFE;
+    justify-content: center;
+}
+
+.article {
+    width: 180px;
+    margin: 15px 15px;
+}
+
+.articleImage {
+    background-color: #BFDBFE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    align-items: center;
+    border: 1px dashed #2563EB;
+    cursor: pointer;
+
+
+}
+
+#hamburger {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2563EB;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+
+        width: 90%;
+        margin: auto;
+
+    }
+
+    ul {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .navSection {
+        display: block;
+    }
+
+    .search {
+        padding-top: 2%;
+        margin-top: 15px;
+        height: 25px;
+        border-radius: 5px;
+    }
+}
+
+/* 
+  @media only screen and (max-width: 375px) {
+    
+  } */
