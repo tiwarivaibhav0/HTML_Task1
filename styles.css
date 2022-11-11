@@ -1,9 +1,12 @@
 body {
+    background-color: #EFF6FF;
+
+}
+.container {
     font-family: 'Playfair Display';
     color: #2563EB;
-    width: 80%;
+    width: 90%;
     margin: auto;
-    background-color: #EFF6FF;
 }
 
 nav {
@@ -11,12 +14,17 @@ nav {
     justify-content: space-between;
 }
 
-ul {
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav_links {
     list-style-type: none;
     display: flex;
 }
 
-li {
+.nav_links >li {
     margin: 0 8px;
 
 }
@@ -74,23 +82,25 @@ input::placeholder {
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
     width: 200px;
 }
 
-.sidebar>* {
-    margin-bottom: 10px;
+.sidebar>ul>li {
+    margin-bottom: 12px;
 }
+.gallerySection{
+    width: 100%;
+    background-color: #DBEAFE;
+    position: relative;
+    padding-top: 3%;
 
+
+}
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    background-color: #DBEAFE;
     justify-content: center;
-    position: relative;
-    padding-top: 3%;
+    gap: 1rem;
 }
 #close{
     position: absolute;
@@ -99,8 +109,10 @@ input::placeholder {
 }
 
 .article {
-    width: 180px;
-    margin: 15px 15px;
+    
+    flex: 0 0 30%;
+    /* max-width: 30%; */
+    min-width: 185px;
 }
 
 .articleImage {
@@ -108,7 +120,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 150px;
+    height: 160px;
     align-items: center;
     border: 1px dashed #2563EB;
     cursor: pointer;
@@ -128,14 +140,14 @@ a {
 
 @media only screen and (max-width: 768px) {
 
-    body {
+    .container {
 
         width: 90%;
         margin: auto;
 
     }
 
-    ul {
+    .nav_links {
         display: none;
     }
 
