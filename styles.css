@@ -89,6 +89,13 @@ input::placeholder {
     width: 100%;
     background-color: #DBEAFE;
     justify-content: center;
+    position: relative;
+    padding-top: 3%;
+}
+#close{
+    position: absolute;
+    right: 1.5%;
+    top:0.5%;
 }
 
 .article {
